@@ -8,15 +8,35 @@
   <title>Главная страница</title>
 </head>
 <body>
+  <!-- <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div> -->
   <header class="page-header">
-    <div class=" page-header__wrapper container">
-      <a class="page-header__logo-link" href="#">
-        <img class="page-header__logo" src="#" alt="Логотип магазина Глейси Шоп">
+    <div class="page-header__wrapper container">
+      <a class="page-header__logo-link">
+        <img class="page-header__logo" src="img/logo-gllacy.png" width="154" height="64" alt="Логотип магазина Глейси Шоп">
       </a>
       <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="catalog.html">Каталог</a>
+              <ul class="main-navigation__catalog-list drop-down">
+                <li class="main-navigation__catalog-item main-navigation__catalog-item--underline">
+                  <a class="main-navigation__catalog-link main-navigation__catalog-link--bold" href="#">Новинки</a>
+                </li>
+                <li class="main-navigation__catalog-item">
+                  <a class="main-navigation__catalog-link" href="creamy.html">Сливочное</a>
+                </li>
+                <li class="main-navigation__catalog-item">
+                  <a class="main-navigation__catalog-link" href="#">Щербеты</a>
+                </li>
+                <li class="main-navigation__catalog-item">
+                  <a class="main-navigation__catalog-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="main-navigation__catalog-item">
+                  <a class="main-navigation__catalog-link" href="#">Мелорин</a>
+                </li>
+              </ul>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="#">Доставка и оплата</a>
@@ -25,23 +45,25 @@
             <a class="main-navigation__link" href="#">Компании</a>
           </li>
         </ul>
-        <ul class="main-navigation__inner-list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__inner-link main-navigation__search" href="#">Поиск</a>
+        <ul class="main-navigation__user-list">
+          <li class="main-navigation__user-item">
+            <a class="main-navigation__user-link main-navigation__user--search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__inner-link main-navigation__login" href="#">Вход</a>
+          <li class="main-navigation__user-item">
+            <a class="main-navigation__user-link main-navigation__user--login" href="#">Вход</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__inner-link main-navigation__cart" href="#">Пусто</a>
+          <li class="main-navigation__user-item">
+            <a class="main-navigation__user-link main-navigation__user--cart" href="#">Пусто</a>
           </li>
         </ul>
       </nav>
-      <div class="page-header__contacts">
+    </div>
+      <div class="page-header__contacts container">
         <p class="page-header__time">С 10 до 20, ежедневно</p>
         <a class="page-header__tel" href="tel:+78124502525">8 812 450-25-25</a>
       </div>
-    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Интернет-магазин мороженого собственного производства Глейси Шоп</h1>

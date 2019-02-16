@@ -1,0 +1,38 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+//Убрать после установки размеров элементов
+//img {
+//  width: 100%;
+//}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}

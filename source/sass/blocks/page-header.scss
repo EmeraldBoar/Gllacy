@@ -1,0 +1,33 @@
+.page-header__wrapper {
+  display: flex;
+}
+
+.page-header__logo-link {
+  padding-top: 9px;
+  margin-right: 10px;
+}
+
+.page-header__logo {
+  display: block;
+}
+
+.page-header__contacts {
+  text-align: right;
+}
+
+
+.page-header__time {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.page-header__tel {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
