@@ -50,7 +50,7 @@
   background-color: transparent;
 }
 
-.main-navigation__item:hover .drop-down {
+.main-navigation__item:hover .main-navigation__catalog-list {
   display: block;
 }
 
@@ -111,11 +111,23 @@
 }
 
 .main-navigation__user-item {
+  position: relative;
   margin-right: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 100%;
+  }
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.main-navigation__user-item:hover .main-navigation__search {
+  display: block;
 }
 
 .main-navigation__user-link {
@@ -147,6 +159,7 @@
   &:hover,
   &:focus {
     color: #323232;
+    background-color: #f8f7f4;
   }
 
   &:hover::before,
@@ -175,6 +188,7 @@
   &:hover,
   &:focus {
     color: #323232;
+    background-color: #f8f7f4;
   }
 
   &:hover::before,
@@ -263,5 +277,50 @@
 }
 
 .main-navigation__catalog-link--bold {
+  font-weight: 700;
+}
+
+.main-navigation__search {
+  left: -309px;
+  width: 341px;
+  padding: 15px 20px;
+}
+
+.main-navigation__search-button {
+  display: none;
+}
+
+.main-navigation__login {
+  width: 277px;
+  padding: 20px 17px 22px 19px;
+}
+
+.main-navigation__login-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-navigation__login-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation__login-input {
+  margin-bottom: 20px;
+}
+
+.main-navigation__login-link {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.main-navigation__login-button {
+  width: 100px;
+  height: 44px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 700;
 }

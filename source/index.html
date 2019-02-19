@@ -19,24 +19,24 @@
       <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Каталог</a>
-              <ul class="main-navigation__catalog-list drop-down">
-                <li class="main-navigation__catalog-item main-navigation__catalog-item--underline">
-                  <a class="main-navigation__catalog-link main-navigation__catalog-link--bold" href="#">Новинки</a>
-                </li>
-                <li class="main-navigation__catalog-item">
-                  <a class="main-navigation__catalog-link" href="creamy.html">Сливочное</a>
-                </li>
-                <li class="main-navigation__catalog-item">
-                  <a class="main-navigation__catalog-link" href="#">Щербеты</a>
-                </li>
-                <li class="main-navigation__catalog-item">
-                  <a class="main-navigation__catalog-link" href="#">Фруктовый лед</a>
-                </li>
-                <li class="main-navigation__catalog-item">
-                  <a class="main-navigation__catalog-link" href="#">Мелорин</a>
-                </li>
-              </ul>
+            <a class="main-navigation__link" href="#">Каталог</a>
+            <ul class="main-navigation__catalog-list drop-down">
+              <li class="main-navigation__catalog-item main-navigation__catalog-item--underline">
+                <a class="main-navigation__catalog-link main-navigation__catalog-link--bold" href="#">Новинки</a>
+              </li>
+              <li class="main-navigation__catalog-item">
+                <a class="main-navigation__catalog-link" href="creamy.html">Сливочное</a>
+              </li>
+              <li class="main-navigation__catalog-item">
+                <a class="main-navigation__catalog-link" href="#">Щербеты</a>
+              </li>
+              <li class="main-navigation__catalog-item">
+                <a class="main-navigation__catalog-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="main-navigation__catalog-item">
+                <a class="main-navigation__catalog-link" href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="#">Доставка и оплата</a>
@@ -50,9 +50,26 @@
             <a class="main-navigation__user-link main-navigation__user--search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
+            <div class="main-navigation__search drop-down">
+              <form class="main-navigation__search-form" action="#">
+                <input class="main-navigation__search-input drop-down__input" type="text" name="search" placeholder="Что ищем?">
+                <button type="submit" class="main-navigation__search-button"></button>
+              </form>
+            </div>
           </li>
           <li class="main-navigation__user-item">
             <a class="main-navigation__user-link main-navigation__user--login" href="#">Вход</a>
+            <div class="main-navigation__login drop-down">
+              <form class="main-navigation__login-form" action="#">
+                <input class="main-navigation__login-input drop-down__input" type="email" placeholder="Электронная почта">
+                <input class="main-navigation__login-input drop-down__input" type="password" placeholder="Пароль">
+                <button class="main-navigation__login-button button" type="submit">Войти</button>
+                <div class="main-navigation__login-wrapper">
+                  <a class="main-navigation__login-link global-link-black" href="#">Забыли пароль?</a>
+                  <a class="main-navigation__login-link global-link-black" href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
           </li>
           <li class="main-navigation__user-item">
             <a class="main-navigation__user-link main-navigation__user--cart" href="#">Пусто</a>
