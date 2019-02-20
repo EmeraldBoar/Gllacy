@@ -19,7 +19,9 @@
       <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Каталог</a>
+            <div class="main-navigation__item-wrapper">
+              <a class="main-navigation__link" href="#">Каталог</a>
+            </div>
             <ul class="main-navigation__catalog-list drop-down">
               <li class="main-navigation__catalog-item main-navigation__catalog-item--underline">
                 <a class="main-navigation__catalog-link main-navigation__catalog-link--bold" href="#">Новинки</a>
@@ -39,10 +41,14 @@
             </ul>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Доставка и оплата</a>
+            <div class="main-navigation__item-wrapper">
+              <a class="main-navigation__link" href="#">Доставка и оплата</a>
+            </div>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Компании</a>
+            <div class="main-navigation__item-wrapper">
+              <a class="main-navigation__link" href="#">О Компании</a>
+            </div>
           </li>
         </ul>
         <ul class="main-navigation__user-list">
@@ -72,7 +78,33 @@
             </div>
           </li>
           <li class="main-navigation__user-item">
-            <a class="main-navigation__user-link main-navigation__user--cart" href="#">Пусто</a>
+            <a class="main-navigation__user-link main-navigation__user--cart main-navigation__user--in-cart" href="#">2 товара</a>
+            <div class="main-navigation__cart drop-down">
+              <ul class="main-navigation__cart-list">
+                <li class="main-navigation__cart-item">
+                  <button class="main-navigation__cart-button-delate" type="button"></button>
+                  <img class="main-navigation__cart-image" src="img/logo-ice-cream-cart-small-1.png" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                  <div class="main-navigation__cart-item-wrapper">
+                    <p class="main-navigation__cart-title">Пломбир с апельсиновым джемом</p>
+                    <span class="main-navigation__cart-weight">1,5 кг x <span class="main-navigation__cart-weight-price">200 руб.</span></span>
+                    <span class="main-navigation__cart-price">300 руб.</span>
+                  </div>
+                </li>
+                <li class="main-navigation__cart-item">
+                  <button class="main-navigation__cart-button-delate" type="button"></button>
+                  <img class="main-navigation__cart-image" src="img/logo-ice-cream-cart-small-3.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                  <div class="main-navigation__cart-item-wrapper">
+                    <p class="main-navigation__cart-title">Клубничный пломбир с присыпкой из белого шоколада</p>
+                    <span class="main-navigation__cart-weight">1,5 кг x <span class="main-navigation__cart-weight-price">300 руб.</span></span>
+                    <span class="main-navigation__cart-price">450 руб.</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="main-navigation__cart-wrapper">
+                <span class="main-navigation__cart-total">Итого: 750 руб.</span>
+                <a class="main-navigation__cart-button button" href="#">Оформить заказ</a>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 .drop-down {
   position: absolute;
   top: 41px;
-  display: block;
+  display: none;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -15,4 +15,13 @@
   line-height: 24px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+  outline: none;
+
+  &:hover {
+    border: 2px solid #d3d3d2;
+  }
+
+  &:focus {
+    border: 2px solid #92c1f1;
+  }
 }
