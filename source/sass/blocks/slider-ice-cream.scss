@@ -1,0 +1,87 @@
+.slider-ice-cream {
+  position: relative;
+  text-align: center;
+  padding-top: 270px;
+  margin-bottom: 42px;
+}
+
+.slider-ice-cream__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
+.slider-ice-cream__title {
+  width: 667px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.slider-ice-cream__button {
+  display: inline-block;
+  width: 280px;
+  height: 64px;
+  padding: 9px 0;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.slider-ice-cream__toggles {
+  position: absolute;
+  left: 27px;
+  bottom: 20px;
+  z-index: 20;
+  font-size: 0;
+}
+
+.slider-ice-cream__toggle {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+  vertical-align: top;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* stylelint-disable */
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/logo-ice-cream1.png"),
+  url("../img/logo-ice-cream-light.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/logo-ice-cream2.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/logo-ice-cream3.png");
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper .slider-ice-cream__toggle[for="product-1"],
+#product-2:checked ~ .site-wrapper .slider-ice-cream__toggle[for="product-2"],
+#product-3:checked ~ .site-wrapper .slider-ice-cream__toggle[for="product-3"] {
+  background-color: #ffffff;
+}
+/* stylelint-enable */

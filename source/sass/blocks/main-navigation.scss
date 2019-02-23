@@ -1,7 +1,9 @@
 .main-navigation {
+  position: relative;
+  z-index: 30;
   display: flex;
   justify-content: space-between;
-  width: 968px;
+  width: 982px;
 }
 
 .main-navigation__item {
@@ -10,7 +12,7 @@
   &::after {
     content: "";
     position: absolute;
-    height: 15px;
+    height: 8px;
     width: 100%;
   }
 
@@ -84,7 +86,7 @@
 }
 
 .main-navigation__list, {
-  width: 600px;
+  width: 372px;
   padding-top: 23px;
 }
 
@@ -156,6 +158,7 @@
 
   &--active {
     background-color: #d07058;
+    cursor: default;
 
     &:hover,
     &:focus {
@@ -190,7 +193,7 @@
   &::after {
     content: "";
     position: absolute;
-    height: 15px;
+    height: 10px;
     width: 100%;
   }
 
