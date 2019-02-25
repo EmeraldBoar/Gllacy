@@ -1,6 +1,28 @@
+.ice-cream {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ice-cream__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(248, 247, 244, 0.2);
+  }
+}
+
 .ice-cream__price {
   position: absolute;
   top: 206px;
+  left: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
@@ -8,6 +30,7 @@
 }
 
 .ice-cream__image {
+  width: 93%;
   margin-bottom: 7px;
 }
 
@@ -27,6 +50,7 @@
 
 .ice-cream__description {
   display: block;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;

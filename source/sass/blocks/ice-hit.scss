@@ -1,21 +1,4 @@
-.ice-hit__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.ice-hit__item {
-  position: relative;
-  width: 23.3%;
-  margin-right: 2.2%;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
 .ice-hit__image {
   position: absolute;
+  left: 0;
 }
