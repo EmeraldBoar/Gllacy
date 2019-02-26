@@ -1,4 +1,9 @@
+.ice-hit {
+  margin-bottom: 22px;
+}
+
 .ice-hit__image {
   position: absolute;
   left: 0;
+  z-index: 40;
 }

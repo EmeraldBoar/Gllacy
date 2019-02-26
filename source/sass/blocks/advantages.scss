@@ -1,0 +1,57 @@
+.advantages__wrapper {
+  padding: 25px 20px 14px 20px;
+  color: #323232;
+  background-color: #f0e4d0;
+  background-image: url("../img/bg-advantages.png");
+  border-radius: 15px;
+}
+
+.advantages__header-text {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  width: 48.10%;
+  margin-bottom: 7px;
+  margin-right: 2.98%;
+  padding-left: 56px;
+  padding-top: 16px;
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+.advantages__item--ice-cream {
+  background-image: url("../img/icon-ice-cream.png");
+}
+
+.advantages__item--cow {
+  background-image: url("../img/icon-cow.png");
+}
+
+.advantages__item--leaf {
+  background-image: url("../img/icon-leaf.png");
+}
+
+.advantages__item--thermometer {
+  background-image: url("../img/icon-thermometer.png");
+}
+
+.advantages__text {
+  margin: 0;
+}
