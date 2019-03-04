@@ -29,11 +29,13 @@
 
 .ice-cream__wrapper {
   position: relative;
+  margin-bottom: 7px;
+  border-radius: 50%;
 }
 
 .ice-cream__price {
   position: absolute;
-  bottom: 22px;
+  bottom: 10px;
   left: 0;
   font-size: 45px;
   line-height: 45px;
@@ -42,8 +44,8 @@
 }
 
 .ice-cream__image {
+  display: block;
   width: 100%;
-  margin-bottom: 7px;
 }
 
 // .ice-cream__rub {
