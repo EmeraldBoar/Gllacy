@@ -226,18 +226,18 @@
       <section class="news">
         <h2 class="visually-hidden">Новости</h2>
         <div class="news__wrapper container">
-          <article class="news-blog">
-            <b class="news-blog__header">Новое в нашем блоге</b>
-            <h2 class="news__title">
-              <a class="news__title-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          <article class="article-setting">
+            <b class="article-setting__header">Новое в нашем блоге</b>
+            <h2 class="article-setting__title">
+              <a class="article-setting__link global-link-black" href="#">10 способов сервировки фруктовых щербетов к столу</a>
             </h2>
           </article>
           <div class="mailing">
-            <div class="mailing__wrapper">
-              <p class="mailing__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <form class="mailing__form" action="#">
-                <input class="mailing__email" type="email" placeholder="Электронная почта">
-                <button class="mailing__button button">Отправить</button>
+            <div class="mailing-wrapper">
+              <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="mailing-form" action="#">
+                <input class="mailing-email" type="email" placeholder="Электронная почта">
+                <button class="mailing-button button">Отправить</button>
               </form>
             </div>
           </div>
@@ -248,16 +248,16 @@
           <div class="contacts">
             <h2 class="visually-hidden">Контактная информация</h2>
             <div class="contacts__wrapper">
-              <p class="contacts__address-title">Адрес главного офиса и офлайн-магазина:</p>
-              <p class="contacts___address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+              <p class="contacts__title">Адрес главного офиса<br>и офлайн-магазина:</p>
+              <p class="contacts__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
             </div>
             <div class="contacts__wrapper">
-              <p class="contacts__tel-title">Для заказов по телефону:</p>
+              <p class="contacts__title">Для заказов по телефону:</p>
               <a class="contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
-              <span class="contacts__time">(с 10 до 20 ежедневно)</span>
+              <p class="contacts__time">(с 10 до 20 ежедневно)</p>
             </div>
+            <button class="contacts__button button">Форма обратной связи</button>
           </div>
-          <button class="contacts__button button">Форма обратной связи</button>
         </div>
       </section>
     </main>
@@ -265,26 +265,41 @@
       <div class="page-footer__wrapper container">
         <ul class="socials">
           <li class="socials__item">
-            <a class="socials__link" href="#">Twitter</a>
+            <a class="socials__link" href="#">
+              <img class="socials__image" src="../img/icon-twitter.png" width="32" height="32" alt="Twitter">
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">Instagram</a>
+            <a class="socials__link" href="#">
+              <img class="socials__image" src="../img/icon-instagram.png" width="32" height="32" alt="Instagram">
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">Facebook</a>
+            <a class="socials__link" href="#">
+              <img class="socials__image" src="../img/icon-facebook.png" width="32" height="32" alt="Facebook">
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">Vkontakte</a>
+            <a class="socials__link" href="#">
+              <img class="socials__image" src="../img/icon-vkontakte.png" width="32" height="32" alt="Vkontakte">
+            </a>
           </li>
         </ul>
         <div class="page-footer__links">
-          <a class="page-footer__link" href="#">Для поставщиков</a>
-          <a class="page-footer__link" href="#">Наши документы</a>
-          <a class="page-footer__link" href="#">О производстве</a>
-          <a class="page-footer__link" href="#">Экологические стандарты</a>
+          <div class="page-footer__link-wrapper">
+            <a class="page-footer__link page-footer__link--bold page-footer__link--heart global-link-white" href="#">Для поставщиков</a>
+            <a class="page-footer__link global-link-white" href="#">О производстве</a>
+          </div>
+          <div class="page-footer__link-wrapper">
+            <a class="page-footer__link global-link-white" href="#">Наши документы</a>
+            <a class="page-footer__link global-link-white" href="#">Экологические стандарты</a>
+          </div>
         </div>
-        <div class="copyright">
-          <p class="copyright__text">Сделано в <a class="copyright__link" href="#">HTML Academy</a> © 2017</p>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-image-link" href="#">
+            <img class="page-footer__copyright-image" src="../img/logo-htmlacademy.png" alt="Логотип Html Academy" width="108" height="39">
+          </a>
+          <p class="page-footer__copyright-text">Сделано в <a class="page-footer__copyright-link global-link-white" href="#">HTML Academy</a> © 2017</p>
         </div>
       </div>
     </footer>

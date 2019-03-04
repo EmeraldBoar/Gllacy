@@ -61,6 +61,7 @@
 }
 
 .ice-cream__description {
+  width: 100%;
   margin: 0;
   margin-bottom: 15px;
   font-size: 16px;
@@ -73,12 +74,14 @@
 
 .ice-cream__button {
   position: absolute;
+  left: 50%;
   bottom: 22px;
   display: none;
   align-items: center;
   justify-content: center;
   width: 200px;
   height: 44px;
+  margin-left: -100px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;

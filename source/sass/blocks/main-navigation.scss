@@ -15,10 +15,6 @@
     height: 8px;
     width: 100%;
   }
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .main-navigation__item:hover .drop-down,
@@ -86,7 +82,7 @@
 }
 
 .main-navigation__list, {
-  width: 372px;
+  width: 375px;
   padding-top: 23px;
 }
 
@@ -225,8 +221,10 @@
     content: "";
     position: absolute;
     left: 50%;
-    margin-left: -8px;
+    top: 50%;
     display: block;
+    margin-left: -8px;
+    margin-top: -8px;
     width: 17px;
     height: 17px;
     background-image: url("../img/icon-search.png");
