@@ -12,13 +12,17 @@
 }
 
 .page-header__contacts {
-  text-align: right;
+  display: flex;
 }
 
+.page-header__contacts-wrapper {
+  text-align: right;
+  flex-grow: 1;
+}
 
 .page-header__time {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;

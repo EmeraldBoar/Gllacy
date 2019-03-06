@@ -1,0 +1,37 @@
+.breadcrumbs {
+  width: 70%;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-right: 20px;
+}
+
+.breadcrumbs__item:not(:last-child)::after{
+  content: "»";
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+}
+
+.breadcrumbs__item:last-child .breadcrumbs__link {
+  border: none;
+  cursor: default;
+}

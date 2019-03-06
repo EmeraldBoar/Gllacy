@@ -19,7 +19,8 @@
   &:focus {
     background-color: rgba(248, 247, 244, 0.2);
     padding-bottom: 66px;
-    margin-bottom: -66px;
+    margin-bottom: -50px;
+    z-index: 100;
   }
 }
 
@@ -29,7 +30,7 @@
 
 .ice-cream__wrapper {
   position: relative;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
   border-radius: 50%;
 }
 
@@ -65,7 +66,7 @@
 .ice-cream__description {
   width: 100%;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
